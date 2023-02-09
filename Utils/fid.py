@@ -128,6 +128,7 @@ def get_fid(shapenet_path, model, model_ids, device, dual, out_res, category, im
     out_res: output resolution of generated texture
     image_size: size of image rendered
     return: fid of the given dataset
+    we use mean as an aggregation function
     """
     # set model to eval mode
     model.eval()
@@ -208,4 +209,6 @@ def get_fid(shapenet_path, model, model_ids, device, dual, out_res, category, im
 
     m1, s1 = calculate_activation_statistics(real)
     m2, s2 = calculate_activation_statistics(generated)
-    return calculate_frechet_distance(mu1=m1, mu2=m2, sigma1=s1, sigma2=s2)
+    agg = calculate_frechet_distance(mu1=m1, mu2=m2, sigma1=s1, sigma2=s2)
+    mean_fid = agg / len(model_ids)
+    return mean_fid
