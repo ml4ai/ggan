@@ -5,12 +5,22 @@ https://link.springer.com/chapter/10.1007/978-3-031-25825-1_28
     
 https://arxiv.org/pdf/2206.08547.pdf
 
-# Download ShapeNet car dataset and modify paths in the ... file
 
-# train using
+Download ShapeNet car dataset from: https://shapenet.org/
 
-# test using
+requirements:
+    python==3.8
+    pytorch==1.9.0+cu111
+    pytorch3d==0.6.0
 
+train using [ggan model]:
+    sh Experiments/gnn_kraken.sh
+
+test using [ggan model]: 
+    sh Experiments/test.sh
+
+Note: The source code contains multiple files used to train other models
+Note: The optimization problem is complicated: changing hyperparameters slightly may result in huge changes in the generated texture quality
 
 If you use the source code please cite the following paper:
 
