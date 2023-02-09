@@ -1,1 +1,0 @@
-python3 Train/gnn.py --config Configs/gnn_kraken.json --configD Configs/discriminator.json
