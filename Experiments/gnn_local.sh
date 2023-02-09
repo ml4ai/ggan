@@ -1,0 +1,1 @@
+python Train/gnn.py --config Configs/gnn_local.json --configD Configs/discriminator.json

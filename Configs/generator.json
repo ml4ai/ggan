@@ -1,0 +1,9 @@
+{
+  "comment_nz": "half from noise, half from uv_layout if we use uv_layout set it to be divisible by 2: if not uv_layout:all from noise vector",
+  "nz": 512,
+  "ngf": 64,
+  "nc": 3,
+  "interpolation_type": "uniform",
+  "_interpolation_type": "spherical",
+  "num_interpolation": 5
+}
