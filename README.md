@@ -10,6 +10,7 @@ https://link.springer.com/chapter/10.1007/978-3-031-25825-1_28
 
 
 If you use the source code please cite the following paper:
+
 @inproceedings{dharma2023texture,
   title={Texture Generation Using a Graph Generative Adversarial Network and Differentiable Rendering},
   author={Dharma, KC and Morrison, Clayton T and Walls, Bradley},
