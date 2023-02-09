@@ -25,7 +25,7 @@ test [ggan model]:
 
 Note: The source code contains multiple files used to train other models
 
-Note: The optimization problem is complicated: changing hyperparameters slightly may result in huge changes in the generated texture quality
+Note: The optimization problem is complicated [changing hyperparameters slightly may result in a huge change in the generated texture quality]
 
 If you use the source code please cite the following paper:
 
