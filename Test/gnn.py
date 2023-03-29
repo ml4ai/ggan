@@ -42,9 +42,9 @@ config = json.load(open(args.config, 'r'))
 # parse config file and get the parameters
 
 # load train_ids from model_ids.pickle file
-model_ids_path = "Data/model_ids.pickle"
-with open(model_ids_path, "rb") as read_file:
-    model_ids = pickle.load(read_file)
+# model_ids_path = "Data/model_ids.pickle"
+# with open(model_ids_path, "rb") as read_file:
+#    model_ids = pickle.load(read_file)
 
 model_ids = sorted(model_ids)
 # output resolution of texture atlas
